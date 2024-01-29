@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4dad5dc317.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/coollogo_com-21281738.png" class="logo">
+                <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi, I'm <span>Sangeeth</span> <br>K from Tamilnadu</h1>
+            </div>
+
+        </div>
+    </div>
+<!-- ----------about--------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Picsart_23-04-16_07-48-46-101.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>But the excitement is far from fading away. After acquiring the Telugu rights, 
+                        Asian Multiplexes Pvt. Ltd. and Suresh Productions are getting ready for a big release in
+                         Andhra Pradesh and Telangana on January 25. Expectations are
+                         already very high after the recent trailer was released, promising a
+                         captivating cinematic experience.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education') ">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Developing a web application using java and Spring boot</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Buliding Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>MCA from Jamal mohamed college-Tiruchirappalli.<br>cgpa: 7.2</li>
+                            <li><span>2021</span><br>B.sc from Bharathidhasan University.<br>cgpa: 6.0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Java Development</h2>
+                <p>Java is an object oriented language and some concepts may be new. 
+                    Take breaks when needed, and go over the examples as many times as needed.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div><i class="fa-solid fa-crop-simple"></i>
+
+                <h2>web Design</h2>
+                <p>Java is an object oriented language and some concepts may be new. 
+                    Take breaks when needed, and go over the examples as many times as needed.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>Java is an object oriented language and some concepts may be new. 
+                    Take breaks when needed, and go over the examples as many times as needed.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/phone-292994_1920.jpg" alt="">
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>This project used to track the book details in library</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/business-2846221_1920.jpg" alt="">
+                    <div class="layer">
+                    <h3>portfolio</h3>
+                    <p>This project used to track the book details in library</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/office-925806_1920.jpg" alt="">
+                <div class="layer">
+                    <h3>Restarent booking</h3>
+                    <p>This project used to track the book details in library</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- -------condect--------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sangeethk3012001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9750349575</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="http://linkedin.com/in/sangeeth-k-b44b45263" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/file/Gray and White Simple Clean Resume (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Sumit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © sangeeth</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxGq9gTXj4viMHBBe56SX37CgfJw4t1wufiHFgdDHWpni4ZeUxg1ttU7XB-iBNo2t6V_g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="message send successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
